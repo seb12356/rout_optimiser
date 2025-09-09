@@ -62,7 +62,7 @@ route_df = df_overdue.loc[best_route["route"]].reset_index(drop=True)
 
 # Send to Google API for Driving Optimization
 
-start_address = "46 Albert Avenue, Hull, HU3 6QG, UK"
+start_address = "" # TODO Add start adress
 end_address = start_address
 
 addresses = route_df["formatted_address"].tolist()
